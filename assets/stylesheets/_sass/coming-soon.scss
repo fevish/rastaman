@@ -1,0 +1,123 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: $background-image;
+    background-size: 100%;
+    font-family: $font1;
+}
+.color-line {
+    background-color: $brand-color;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top:0;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: $background-color;
+    opacity: .3;
+}
+
+.circle {
+    height: 600px;
+    width: 600px;
+    color: $light-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px #000;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        text-align:center;
+        font-family: $font2;
+        font-size: 4em;
+        margin: 0;
+        padding:0;
+    }
+}
+
+.circle:before {
+    position: absolute;
+    content: "";
+    width: 600px;
+    height:600px;
+    border: 3px solid $circle-color;
+    -webkit-transform: rotate($rotate);
+    -moz-transform: rotate($rotate);
+    -o-transform: rorate($rotate);
+    transform: rotate($rotate);
+}
+
+.numbers {
+    display: inline;
+    text-align: center;
+}
+
+.inline-numbers {
+    display: inline-block;
+    font-size: 2em;
+    font-family: $font2;
+    margin: 10px;
+}
+
+.smalltext {
+    font-size: .5em;
+}
+
+.days {
+    display: inline;
+    font-family: $font2;
+    font-size: 10em;
+    margin: 0;
+    padding: 0;
+    line-height:0;
+}
+
+.large-text {
+    font-size: 4em;
+}
+
+.subscribe {
+    margin-top: 35px;
+}
+input {
+    background: none;
+    padding: 10px;
+    border: 2px solid $light-color;
+    color: $light-color;
+    font-family: $font3;
+    font-size: 1em;
+}
+
+input[type=text] {
+}
+
+input[type=submit] {
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $placeholder-color;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $placeholder-color;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $placeholder-color;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $placeholder-color;
+}
