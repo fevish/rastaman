@@ -55,6 +55,7 @@ body {
 }
 
 .circle {
+    position:relative;
     color: $light-color;
     display: flex;
     align-items: center;
@@ -62,6 +63,11 @@ body {
     flex-direction: column;
     text-shadow: 2px 2px 3px #000;
     z-index:10;
+    min-height:500px;
+    min-width:500px;
+    height:500px;
+    width:500px;
+    transition: 1s ease;
     p {
         margin: 0;
         padding: 0;
@@ -76,11 +82,12 @@ body {
 }
 
 .circle:after {
-    transition: 1s ease;
-    position: fixed;
+    position: absolute;
+    top:0;
+    left:0;
     content: "";
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     border: 3px solid;
     z-index:-2;
     border-image-source: linear-gradient(45deg,$circle-color 45%, rgba(255, 255, 255, 0));
@@ -150,8 +157,10 @@ input[type=submit] {
   color: $placeholder-color;
 }
 @media only screen and (min-width: 900px) {
-    .circle:after {
-        width: 600px;
-        height: 600px;
+    .circle {
+        height:600px;
+        width:600px;
     }
+    .circle:after {
+}
 }
