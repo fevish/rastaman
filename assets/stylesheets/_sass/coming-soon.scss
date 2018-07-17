@@ -3,7 +3,7 @@ html, body {
     width: 100vw;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 html {
@@ -81,11 +81,12 @@ body {
     flex-direction: column;
     text-shadow: 2px 2px 3px #000;
     z-index:10;
-    min-height:500px;
-    min-width:500px;
-    height:500px;
-    width:500px;
+    min-height:400px;
+    min-width:400px;
+    height:400px;
+    width:400px;
     transition: 1s ease;
+    margin-top:100px;
     p {
         margin: 0;
         padding: 0;
@@ -191,12 +192,24 @@ input[type=submit] {
 }
 @media only screen and (min-width: 900px) {
     .circle {
+        margin-top: 0;
         height:600px;
         width:600px;
     }
     .circle:after {
     }
 }
+// Landscape Mode Mobile
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) { 
+    .circle {
+        margin-top: 350px;
+    }
+
+        }
 // IE11 - Disables bg animation.
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .main-bg-image {
