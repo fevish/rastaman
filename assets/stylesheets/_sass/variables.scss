@@ -9,3 +9,68 @@ $light-color: #efefef;
 $placeholder-color: #efefef;
 $rotate: -45deg;
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Roboto:400,700');
+
+@keyframes animate-shape {
+    0% {
+        transform: scale(1.0) rotate($rotate);
+        -webkit-transform: scale(1.0) rotate($rotate);
+        -moz-transform: scale(1.0) rotate($rotate);
+        -ms-transform: scale(1.0) rotate($rotate);
+        -o-transform: scale(1.0) rotate($rotate);
+    }
+    100% {
+        transform: scale(1.06) rotate($rotate);
+        -webkit-transform: scale(1.06) rotate($rotate);
+        -moz-transform: scale(1.06) rotate($rotate);
+        -ms-transform: scale(1.06) rotate($rotate);
+        -o-transform: scale(1.06) rotate($rotate);
+    }
+}
+
+@mixin animate-scale {
+    -webkit-animation-name: animate-shape;
+    -webkit-animiation-name: animate-shape;
+    animation-name: animate-shape;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bg-scale {
+    0% {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+
+        -webkit-transform-origin: top right;
+        -moz-transform-origin: top right;
+        -ms-transform-origin: top right;
+        -o-transform-origin: top right;
+        transform-origin: top right;
+        
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@mixin background-scale {
+    -webkit-animation-name: bg-scale;
+    -webkit-animiation-name: bg-scale;
+    animation-name: bg-scale;
+    animation-duration: 130s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    -ms-animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+}
+
