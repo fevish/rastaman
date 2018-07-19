@@ -1,0 +1,36 @@
+.snip-header {
+    background: linear-gradient(90deg, $brand-color, $brand-color2)!important;
+}
+
+.snip-header:before {
+    content: "YES, We can style this!";
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+    position: absolute;
+    width: 200px;
+    right: 100px;
+}
+.products {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.product {
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    border: 2px solid #000;
+    a { 
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            max-height: 70%;
+            max-width: 70%;
+        }
+}
+}

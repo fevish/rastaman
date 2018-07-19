@@ -1,0 +1,24 @@
+---
+head:
+    _snipcart.html
+---
+{% include _head.html %}
+<div class="product-details">
+    <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
+    <div class="product-description">
+        <p>{{ page.name }}</p>
+
+        <p>
+        {{ page.content }}
+        </p>
+
+        <button class="snipcart-add-item"
+                data-item-name="{{ page.name }}"
+                data-item-id="{{ page.sku }}"
+                data-item-image="{{ page.image }}"
+                data-item-url="{{ site.baseurl }}"
+                data-item-price="{{ page.price }}">
+            ${{ page.price }}
+        </button>
+    </div>
+</div>
