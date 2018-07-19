@@ -3,7 +3,7 @@ name: Two Hundred
 price: 200
 slug: 200x200
 sku: 10200
-image: http://via.placeholder.com/200x200
+image: https://via.placeholder.com/200x200
 layout: details
 ---
 

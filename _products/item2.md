@@ -3,7 +3,7 @@ name: Four Hundred
 price: 400
 slug: 400x400
 sku: 10400
-image: http://via.placeholder.com/400x400
+image: https://via.placeholder.com/400x400
 layout: details
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper ante non vehicula eleifend.
